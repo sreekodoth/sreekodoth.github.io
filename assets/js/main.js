@@ -40,7 +40,7 @@ function sendmail() {
         console.log("contactParams",contactParams)
         if(!showerror){
 
-                emailjs.send(process.env.EMAILJS_SERVICEID, process.env.EMAILJS_TEMPLATEID1, contactParams,process.env.EMAILJS_PUBLICKEY).then(function (res) {
+                emailjs.send('service_k71m5mg', 'template_9vn3do5', contactParams,'A5nEzzU9OxUFCBd6e').then(function (res) {
                     document.getElementById("name").value = ''
                     document.getElementById("email").value = ''
                     document.getElementById("message").value = ''
@@ -108,7 +108,7 @@ function sendassessmentreqest() {
 
         console.log("contactParams1",contactParams1)
  if(!showerror){
-        emailjs.send(process.env.EMAILJS_SERVICEID, process.env.EMAILJS_TEMPLATEID2, contactParams1,process.env.EMAILJS_PUBLICKEY).then(function (res) {
+        emailjs.send('service_k71m5mg', 'template_dv8p5ft', contactParams1,'A5nEzzU9OxUFCBd6e').then(function (res) {
             document.getElementById("name").value = ''
             document.getElementById("email").value = ''
             document.getElementById("phno").value = ''
